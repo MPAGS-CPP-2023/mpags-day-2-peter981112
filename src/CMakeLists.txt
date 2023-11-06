@@ -8,6 +8,7 @@ add_executable(mpags-cipher
     mpags-cipher.cpp
     MPAGSCipher/TransformChar.cpp
     MPAGSCipher/ProcessCommandLine.cpp
+    MPAGSCipher/RunCaesarCipher.cpp
 )
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -Wfatal-errors -Wshadow -pedantic")
