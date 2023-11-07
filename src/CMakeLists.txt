@@ -11,6 +11,10 @@ add_executable(mpags-cipher
     MPAGSCipher/RunCaesarCipher.cpp
 )
 
+set(CMAKE_CXX_EXTENSIONS off)
+
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Werror -Wfatal-errors -Wshadow -pedantic")
+
+target_compile_features(mpags-cipher PUBLIC cxx_std_17)
 
 target_compile_features(mpags-cipher PRIVATE cxx_auto_type cxx_range_for cxx_uniform_initialization)

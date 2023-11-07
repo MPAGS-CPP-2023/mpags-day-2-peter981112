@@ -1,6 +1,6 @@
-#include "transformChar.cpp"
-#include "processCommandLine.cpp"
-#include "RunCaesarCipher.cpp"
+#include "MPAGSCipher/TransformChar.cpp"
+#include "MPAGSCipher/ProcessCommandLine.cpp"
+#include "MPAGSCipher/RunCaesarCipher.cpp"
 
 #include <cctype>
 #include <iostream>
@@ -70,7 +70,7 @@ int main(int argc, char* argv[])
         while (std::getline(myfile,line))
         {
             inputText[i] = line;
-            std::cout << inputText[i] << '\n';
+            //std::cout << inputText[i] << '\n';
             i++;
         }
         myfile.close();
